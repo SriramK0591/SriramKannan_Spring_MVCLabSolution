@@ -19,7 +19,7 @@ public class StudentController {
     StudentService studentService;
 
     @RequestMapping(value = "/getAllStudents", method = RequestMethod.GET, headers = "Accept=application/json")
-    public String getCountries(Model model) {
+    public String getStudents(Model model) {
 
         List listOfStudents = studentService.getAllStudents();
         model.addAttribute("student", new Student());
